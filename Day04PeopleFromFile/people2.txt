@@ -1,0 +1,10 @@
+Jerry;33
+Mimi;blah
+Marianna;27
+Tim;67;76
+Terry;61
+M;;;;66.66
+;
+Jim
+Mini;222
+Norman;44
