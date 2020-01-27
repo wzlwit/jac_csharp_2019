@@ -1,0 +1,21 @@
+﻿<Window x:Class="Day14PeopleDB.AddEditDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day14PeopleDB"
+        mc:Ignorable="d" ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        Title="AddEditDialog" Height="188.253" Width="376.58">
+    <Grid>
+        <Label Content="Id:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Name="lblId" Content="-" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="264"/>
+        <TextBox Name="tbName" HorizontalAlignment="Left" Height="23" Margin="85,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264"/>
+        <TextBox Name="tbAge" HorizontalAlignment="Left" Height="23" Margin="85,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264"/>
+        <Button Name="btAddEdit" Click="ButtonAddEdit_Click" IsDefault="True" Content="Add" HorizontalAlignment="Left" Margin="85,118,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button IsCancel="True" Content="Cancel" HorizontalAlignment="Left" Margin="213,118,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

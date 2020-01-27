@@ -1,0 +1,38 @@
+﻿<Window x:Class="Day14PeopleDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day14PeopleDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="264.982" Width="447.213">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="E_xit" Click="FileExit_MenuClick"/>
+            </MenuItem>
+            <MenuItem Header="Add Person" Click="AddPerson_MenuClick" />
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="22">
+            <StatusBarItem>
+                <TextBlock Name="sbLastOp" Text="Program started"/>
+            </StatusBarItem>
+        </StatusBar>
+        <ListView Margin="10" Name="lvPeople" MouseDoubleClick="LvPeople_MouseDoubleClick">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit" Click="EditItem_ContexMenuClick"/>
+                    <MenuItem Header="Delete" Click="DeleteItem_ContexMenuClick"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="30" DisplayMemberBinding="{Binding Id}" />
+                    <GridViewColumn Header="Name" Width="250" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Age" Width="50" DisplayMemberBinding="{Binding Age}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</Window>

@@ -1,0 +1,27 @@
+﻿<Window x:Class="Day12Notepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day12Notepad"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="320.488" Width="609.024">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" Click="FileNew_MenuClick"/>
+                <MenuItem Header="_Open..."/>
+                <MenuItem Header="_Save" Click="FileSave_MenuClick"/>
+                <MenuItem Header="Save _as..." Click="FileSaveAs_MenuClick"/>
+                <Separator/>
+                <MenuItem Header="_Exit"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="22">
+            <StatusBarItem>
+                <TextBlock Name="sbLastOp" Text="Program started"/>
+            </StatusBarItem>
+        </StatusBar>
+        <TextBox Name="tbDocument" TextChanged="TbDocument_TextChanged" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+    </DockPanel>
+</Window>
