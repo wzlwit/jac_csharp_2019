@@ -1,0 +1,14 @@
+Person;Jerry;23
+Teacher;Randy;66;PhysEd;33
+Person;Timmy;44
+
+Examples of invalid lines
+Person;Jerry;;
+Person;Jim;2342;
+Car;BMW;55
+
+Student;;;;
+
+Student;Mary;34;Nursing;3.8
+Student;Martin;31;Math;4.0
+Teacher;Larry;51;Physics;22
