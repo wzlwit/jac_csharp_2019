@@ -1,0 +1,47 @@
+﻿<Window x:Class="Day16TodosDB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day16TodosDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="264.982" Width="447.213">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="E_xit" Click="FileExit_MenuClick"/>
+            </MenuItem>
+            <MenuItem Header="Add Todo" Click="AddTodo_MenuClick" />
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="22">
+            <StatusBarItem>
+                <TextBlock Name="sbLastOp" Text="Program started"/>
+            </StatusBarItem>
+        </StatusBar>
+        <ListView Margin="10" Name="lvTodos" MouseDoubleClick="LvTodos_MouseDoubleClick" GridViewColumnHeader.Click="lvTodos_HeaderClick">
+            <ListView.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit" Click="EditItem_ContexMenuClick"/>
+                    <MenuItem Header="Delete" Click="DeleteItem_ContexMenuClick"/>
+                </ContextMenu>
+            </ListView.ContextMenu>
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="30" DisplayMemberBinding="{Binding Id}">
+                        <GridViewColumnHeader Tag="Id" Content="Id"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="250" DisplayMemberBinding="{Binding Task}">
+                        <GridViewColumnHeader Tag="Task" Content="Task"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="80" DisplayMemberBinding="{Binding DueDate, StringFormat=d }" >
+                        <GridViewColumnHeader Tag="DueDate" Content="Due date"/>
+                    </GridViewColumn>
+                    <GridViewColumn Width="50" DisplayMemberBinding="{Binding IsDone}">
+                        <GridViewColumnHeader Tag="Status" Content="Status"/>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </DockPanel>
+</Window>
