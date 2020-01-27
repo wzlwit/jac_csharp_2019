@@ -1,0 +1,19 @@
+﻿<Window x:Class="Day07SayHello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Day07SayHello"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="141.385" Width="216.882">
+    <Grid>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="45"/>
+        <TextBox Name="tbName" HorizontalAlignment="Left" Height="23" Margin="60,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="tbAge" HorizontalAlignment="Left" Height="23" Margin="60,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Click="ButtonSayHello_Click" Content="Say Hello" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Click="ButtonSaveAndClear_Click"  Content="Save &amp; Clear" HorizontalAlignment="Left" Margin="90,81,0,0" VerticalAlignment="Top" Width="90"/>
+
+    </Grid>
+</Window>
