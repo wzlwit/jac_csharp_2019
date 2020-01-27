@@ -1,0 +1,104 @@
+Quiz 1 - DotNet
+===============
+
+Create new project Quiz1Triple.
+
+In the main class create 3 methods:
+
+static void GPACalculator() {}
+static void FibChecker() {}
+static void MatrixMultiplier() {}
+
+suggested helper method for GPA calculations:
+static double LetterGradetoNumber(String grade) {}
+
+
+IMPORTANT: For 100% grade you only need to implement 2 out of the 3 methods listed above. You choose yourself which one you prefer to implement.
+
+Implementation of GPACalculator method
+--------------------------------------
+
+Keep asking user for their grades, one per line until an empty line is entered.
+Grades are letter grades such as: F, D, C-, C, C+, B-, B, B+, A-, A.
+Each grade has an assigned numerical value in 4.0 scale as described in https://gradecalc.info/ca/qc/mcgill/gpa_calc.pl
+
+
+Display grades back to the user along with their numerical values;
+Calculate the numerical average of all grades and display it.
+
+If an invalid grade is entered you should display an error message and terminate the program.
+
+Example session:
+
+Enter letter grades, one per line:
+B-
+A-
+C
+
+You've entered:
+B- which is 2.7
+A- which is 3.7
+C  which is 2.0
+
+The GPA average is: 2.8
+
+
+
+Implementation of FibChecker() method
+-------------------------------------
+
+Ask user for a number.
+Verify if the number is a Fibonacci number.
+Display the nearest larger Fibonacci number.
+
+If user enters a negative number of something that is not a number display an error message and terminate the program.
+
+Note: you are allowed to create a helper method to generate fibonacci numbers if you like.
+
+Example session:
+
+Enter a number to check against Fibonacci: 345
+345 is not a Fibonacci number
+the next Fibonacci number is 377
+
+
+Implementation of MatrixMultiplier method
+-----------------------------------------
+
+Ask user for two matrices. First one is 2 by 3, second is 3 by 2.
+Perform matrix multiplication and display the result.
+
+Matrix multiplication https://en.wikipedia.org/wiki/Matrix_(mathematics)#Matrix_multiplication
+
+Example session:
+
+Enter the first matrix 2 lines of 3 numbers, comma-separated:
+1,2,3
+4,5,6
+Enter the second matrix 3 lines of 2 numbers, comma-separated:
+1,2
+3,4
+5,6
+
+The result of multiplication is:
+22,28
+49,64
+
+
+Note: you may use String.Split() method to separate numbers that are comma-separated.
+
+Note: you are NOT allowed to copy and paste a general matrix multiplication algorithm.
+
+Main method
+-----------
+
+Main method is up to you. You can, for example just call each of the 3 methods above to test your program.
+
+
+What to submit
+--------------
+
+Close VisualStudio. Create ZIP file (NOT RAR, 7ZIP, or anything else) of your project and upload it to LEA dropbox as your solution to the quiz.
+You do NOT need to name the file in any special way, the system and I will know it came from you.
+
+

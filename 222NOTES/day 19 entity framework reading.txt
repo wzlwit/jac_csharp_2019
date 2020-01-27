@@ -1,0 +1,55 @@
+DAY 19 Entity Framework
+
+http://www.entityframeworktutorial.net/what-is-entityframework.aspx
+
+Read all 10 pages / sections:
+
+- What is Entity Framework?
+- Basic Workflow
+- How EF Works?
+- EF Architecture
+- Context
+- Entity
+- Types of Entity
+- Entity States
+- Development Approaches
+- Persistence Scenarios
+
+
+  
+  
+Start reading about "Code First" from:
+
+http://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx
+
+Sections / pages to read:
+
+What is Code-First
+Setup Environment
+Simple Code-First Example
+Code-First Conventions
+DB Initialization
+DB Initialization Strategy
+
+Data Annotations Attributes
+Table
+Column
+Key
+NotMapped
+ForeignKey
+Index
+InverseProperty
+Required
+MaxLength
+StringLength
+TimeStamp
+ConcurrencyCheck
+
+Configure One-to-One
+Configure One-to-Many
+Configure Many-to-Many
+
+Migration
+Automated Migration
+Code-based Migration
+EF Power Tools

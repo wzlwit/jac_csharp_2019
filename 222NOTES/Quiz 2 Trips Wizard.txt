@@ -1,0 +1,73 @@
+Quiz 2 TripsWizard
+
+TABLES
+
+Table Cities is pre-populated before program is ran. You should insert at least 4 records into it with valid lat/lng data.
+
+Cities
+- Id INT PK IDENT
+- CityName NVC(100)
+- Latitude Float
+- Longitude Float
+
+Trips
+- Id INT PK IDENT
+- PersonName NVC(100)
+- DepartureDate DATE
+- ReturnDate DATE
+- FromCityId INT FOREIGN KEY -> Cities.Id
+- ToCityId INT FOREIGN KEY -> Cities.Id
+
+public class City {
+  public int Id;
+  public string CityName;
+  public double Latitude, Longitude;
+}
+
+public class Trip {
+  public int Id;
+  public string PersonName;
+  public DateTime DepartureDate, ReturnDate;
+  public int FromCityId, ToCityId;
+}
+
+public class TripWithCities {
+  public int TripId;
+  public string PersonName;
+  public int FromCityId, ToCityId;
+  public string FromCityName, ToCityName;
+  public double FromCityLatitude, FromCityLongitude, ToCityLatitude, ToCityLongitude;
+  public DateTime DepartureDate, ReturnDate;
+  public double TripDistanceKm; // computed, not stored
+}
+
+dual-table join example (not tested):
+
+SELECT ps.Id psId, p1.Id p1Id, ...
+FROM Person as ps, Parent as p1, Parent as p2
+WHERE ps.motherId = p1.Id AND ps.fatherId = p2.Id
+
+To retrieve it is best to use name of each column, e.g.
+int personId = (int)reader["psId"];
+
+
+
+Main window - display of list of TripsWithCities.
+
+Add button in menu - when pressed presents WizardSelectFromToCity. When next is pressed WizardSelectFromToCity window is hidden and WizardEnterTripData is shown to create Trip with person data.
+When confirmed new record of Trip is created and list in the main window is refreshed.
+
+Create class Database for accessing database tables. Implement ONLY the methods that you actually need, mainly:
+
+public List<TripWithCities> GetAllTripsWithCities() { ... }
+public List<City> GetAllCities() { ... }
+public void AddTrip(Trip trip) { ... }
+
+MainWindow must be using DockPanel with Menu and ListView (no status bar).
+
+Wizard windows are non-resizable.
+
+SUBMISSION:
+
+Close Visual Studio. Make sure there is a copy of your *.mdf database in the main directory of your Solution/Project.
+Create ZIP file (NOT 7ZIP, NOT RAR) of your entire Solution/Project and submit that file.

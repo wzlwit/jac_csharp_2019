@@ -1,0 +1,22 @@
+Day 12 Homework Tasks:
+
+1. complete status bar updates after every operation in TodosInFile
+
+2. complete CRUD in CarList (add Update and Delete), status bar updates as well
+
+3. complete notepad clone with data loss prevention 
+
+Task 4: (*** MOST IMPORTANT FOR QUIZ 1 ***)
+
+Consider the following data structure:
+
+public class Airport {
+	public string Code; // exactly 3 upper case letters
+	public string City; // 1-100 characters, excluding ; (semicolons)
+	double Latitude, Longitude; // check wikipedia
+	int ElevationMeters; // -1000 to 10000 using a slider 50m increments
+	public override string ToString() { ... }
+} 
+
+Create project Day12AirportsCRUD and implement full CRUD functionality in WPF like we did today.
+

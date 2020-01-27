@@ -1,0 +1,42 @@
+TASK 1 EF
+=========
+
+Create Text Console project Day20CarsAndOwnersEF.
+
+Add Entity Framework via NuGet.
+
+Create DbContext class named ParkingContext.
+
+Create two entities:
+
+class Car { // table Cars
+	int Id;
+	string MakeModel; // up to 100 characters
+	int YearOfProd;
+	Owner Owner; // relation, make nullable
+}
+
+class Owner { // table Owners
+	int Id;
+	string Name; // up to 100 characters
+	ICollection<Car> CarsCollection; // relation
+}
+
+Figure out the difference between eager and lazy loading of related records in Entity Framework.
+Find out how to turn it on and off.
+Also find out how to load related records later if lazy loading was used.
+
+Your main task will be to implement an application that has the following menu:
+
+1. List all cars and their owner
+2. List all owners and their cars
+3. Add a car (no owner)
+4. Add an owner (no cars)
+5. Assign car to a new owner (or no owner)
+6. Delete an owner with all cars they own
+0. Quit
+
+
+
+
+

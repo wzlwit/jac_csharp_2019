@@ -1,0 +1,39 @@
+
+
+
+
+
+
+void function fileOperation() {
+	int fd = fopen("file.txt")
+	if (fd == -1) {
+		...
+		return;
+	}
+	int bytesWritten = fwrite(fd, "klajsfdlasjfjlska");
+	if (bytesWritten == -1) {
+		...
+		return;
+	}
+	bytesWritten = fwrite(fd, "0978209483");
+	if (bytesWritten == -1) {
+		...
+		return;
+	}
+	int result = fclose(fd);
+	if (result == -1) {
+		...
+		return;
+	}
+}
+
+
+try {
+	int fd = fopen("file.txt");
+	fwrite(fd, "klajsfdlasjfjlska");
+	fwrite(fd, "klajsfdlasjfjlska");
+	fwrite(fd, "0978209483");
+	fclose(fd);
+} catch (IOException ex) {
+	...	
+}

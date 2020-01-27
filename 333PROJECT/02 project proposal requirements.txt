@@ -1,0 +1,53 @@
+Project proposal requirements
+=============================
+
+Page 1 content:
+---------------
+
+* Title of the project
+* Names of members of the team
+* Project description in 2-3 paragraphs
+(usually 10-15 lines) - do NOT copy&paste from Wikipedia or other sources.
+* Bullet-point list of:
+- technologies used,
+- special features,
+- additional libraries,
+- challenging items that were not done in class, etc.
+
+NOTE: Proposal is NOT A COMMITMENT.
+This is a basis for discussion.
+Put in rather more than less.
+
+NOTE: No copy&paste from Wikipedia or other such sources.
+
+
+Page 2 content:
+---------------
+
+Design of the database. You may use Visual Studio
+or MS SQL database designer and take a screenshot
+similar to http://i.stack.imgur.com/yQxfY.png
+
+You should include ALL elements you may include
+in your project. Those you are not sure about mark
+with (?) question mark so you can discuss them with
+the teacher.
+
+
+
+Page 3-4 content (1 or 2 pages):
+--------------------------------
+
+Mockups or screenshots of program window(s)
+that illustrate how user will interact with the program.
+Assume you will be able to create custom dialogs.
+
+Do NOT put standard dialogs Ok/Canel and Login or three-field registration dialogs.
+
+MAXIMUM 4 PAGES !!!
+
+
+PLEASE PRINT YOUR PROJECT PROPOSAL (to discuss)
+
+LATER: UPLOAD IT TO LEA AS WELL (for the record)
+*AFTER* APPROVED BY THE TEACHER.

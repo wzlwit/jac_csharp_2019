@@ -1,0 +1,22 @@
+DAY 13 Homework
+
+1. Follow VERY CAREFULLY step-by-step instructions on how to use your Microsoft Imagine account to setup a free Azure account.
+Instructions are in 333PROJECT directory in BitBucket.
+
+You will need that account for your project and it may take a couple of days to figure out how to set it up so we need to begin right away.
+
+Make sure you're not paying for it (you should NOT be required to provide credit card information, if you are - you're doing it wrong).
+
+FINAL OBJECTIVE: Make sure you're able to create one SQL Database in Azure Portal. You will need it for your project.
+
+2. Complete (if needed) and review your solution of Quiz 1.
+
+3. Complete any homeworks and tasks from this week's classes that you haven't completed yet (Notepad and others).
+
+Upcoming topics of next week include:
+* MS SQL Database integration with C#, similar to https://www.codeproject.com/Articles/823854/How-to-connect-SQL-Database-to-your-Csharp-program
+Note: There are other methods of connecting to SQL database C# offers but we will use this one because it is the most simple one.
+
+
+
+

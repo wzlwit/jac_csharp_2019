@@ -1,0 +1,168 @@
+DAY 06 - quiz 2 - PeopleTravel
+==============================
+
+Create a new project Quiz2PeopleTravel
+
+Add the following class definition.
+
+class PersonTravels {
+	string Name; // 2-50 characters long
+	int Age; // 0-150
+	string PassportNo; // two uppercase letters followed by six digits exactly - use regexp
+	List<string> CountriesVisited = new List<string>();
+	public void AddCountryUnique(string country) { ... }
+	public override string ToString() { ...	}
+}
+
+Make sure to encapsulate all fields (obligatory) except CountriesVisited.
+You may add constructor(s) if you like (optional).
+
+On failed validation in setters you will throw custom exception InvalidDataException() with message as parameter.
+
+
+Input file "data.txt":
+
+Jerry;33;AB123545;USA,Germany,France
+Marianna;29;ZZ112233;Japan,Nigeria,USA,Ukraine
+Tom;57;NN778855;
+Mimi;44;NM343434;USA,France
+
+You must handle all possible invalid inputs from file by informing the user with a message and skipping the invalid line. You must continue parsing further lines.
+
+Menu:
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+
+Suggested decomposition - create one method for each menu item.
+You will also need one method to read data from file (at the start of the program) and another method to write data back to file (when program is about to exit).
+
+Printout of information about each PersonTravels to console should use ToString() method you will implement.
+
+For full marks you you MUST decompose your task into methods in the main class, just like we did it in previous examples.
+
+You are also required to use proper error handling, exception propagation, problem decomposition, self-documenting code, etc.
+
+Example session:
+
+Data loaded from file, total of 4 records.
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 1
+
+List of all people:
+1. Jerry is 33 y/o passport AB123545 visited: USA, Germany, France
+2. Marianna is 29 y/o passport ZZ112233 visited: Japan, Nigeria, USA, Ukraine
+3. Tom is 57 y/o passport NN778855 visited no countries
+4. Mimi is 44 y/o passport NM343434 visited: USA, France
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 2
+
+Adding a person and countries visited
+Enter name: Robin
+Enter age: 33
+Enter passport Number: YM998877
+Enter countries visited, one per line, enter (empty line) ends list:
+USA
+China
+Norway
+
+
+Person Robin added successfully:
+Robin is 33 y/o passport YM998877 visited: USA, Chine, Norway
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 3
+
+Registering person visiting a new country.
+List of all people:
+1. Jerry is 33 y/o passport AB123545 visited: USA, Germany, France
+2. Marianna is 29 y/o passport ZZ112233 visited: Japan, Nigeria, USA, Ukraine
+3. Tom is 57 y/o passport NN778855 visited no countries
+4. Mimi is 44 y/o passport NM343434 visited: USA, France
+5. Robin is 33 y/o passport YM998877 visited: USA, Chine, Norway
+
+Enter person number to add country to: 4
+Enter country name: Great Britain
+Country addedd successfully.
+Mimi is 44 y/o passport NM343434 visited: USA, France, Great Britain
+
+Registering person visiting a new country.
+List of all people:
+1. Jerry is 33 y/o passport AB123545 visited: USA, Germany, France
+2. Marianna is 29 y/o passport ZZ112233 visited: Japan, Nigeria, USA, Ukraine
+3. Tom is 57 y/o passport NN778855 visited no countries
+4. Mimi is 44 y/o passport NM343434 visited: USA, France
+5. Robin is 33 y/o passport YM998877 visited: USA, Chine, Norway
+
+Enter person number to add country to: 4
+Enter country name: Great Britain
+Error: Country already in the list.
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 4
+
+Person who visited most countries is Marianna with 4 countries visited:
+Marianna is 29 y/o passport ZZ112233 visited: Japan, Nigeria, USA, Ukraine
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 5
+
+Searching for all who visited a country
+Enter country name: France
+The following people visited France:
+Jerry is 33 y/o passport AB123545 visited: USA, Germany, France
+Mimi is 44 y/o passport NM343434 visited: USA, France
+
+1. Display all people and countries they traveled to
+2. Add person and countries visited
+3. Register a new country visited by a person
+4. Find out who visited most countries
+5. List all who visited a specific country
+0. Exit
+Your choice: 0
+
+Saving data back to file. Exiting.
+
+
+WHAT TO SUBMIT:
+* Close Visual Studio. Create ZIP file (NOT RAR, NOT 7ZIP) of the entire project. Submit that file via LEA.
+
+
+
+
+
+
+
+
+
+

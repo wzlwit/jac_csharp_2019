@@ -1,0 +1,39 @@
+Project ideas and technologies
+==============================
+
+Project ideas:
+- CRM or HR system
+- Calendar / Planner
+- Point Of Sale
+- Warehouse Management (e.g. Blood bank management system)
+- Invoicing
+- Photo, Music or Video library
+- School course & student registration system
+- Drawing (e.g. architectural plan making)
+- A game (not using game libraries)
+
+
+Technologies you MUST use:
+* WPF, C#
+* SQL Database via Azure (at least 5 tables)
+* Multiple windows, dialogs (at least 5 windows total)
+* At least 10 unit tests, using NUnit, similar to
+https://www.visualstudio.com/en-us/docs/test/developer-testing/getting-started/getting-started-with-developer-testing
+
+
+Possible technologies (in no special order):
+* Drag and drop
+* LINQ
+* MVVM (~MVC for WPF) - only for very advanced students
+* EntityFramework (OO database access)
+* Ribbon instead menus
+* StackPanel, GridSplitter (highly recommended)
+* TabControl, ToolBar, TreeView
+* Sound, Animation, Video playback, Camera access
+* PDF-generation, export to Excel
+* Printing using WPF or additional library
+* Drawing on canvas (e.g. Charts with data) via custom libraries
+* WebAPIs client (e.g. stocks)
+* Installer (recommended as the finishing touch)
+* Localization (translation into multiple languages)
+* Storing binary data (pictures, etc.) in a BLOB

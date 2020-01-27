@@ -1,0 +1,19 @@
+Entity Framework Relations:
+
+- One To Many, Many To One
+http://www.entityframeworktutorial.net/code-first/configure-one-to-many-relationship-in-code-first.aspx
+
+- Eager Loading, Lazy Loading
+http://www.entityframeworktutorial.net/eager-loading-in-entity-framework.aspx
+http://www.entityframeworktutorial.net/lazyloading-in-entity-framework.aspx
+
+NOTE: properties that reference other entities MUST BE 'virtual', otherwise automatic fetching will not work.
+
+
+Entity Framework blobs storage
+
+https://stackoverflow.com/questions/4653095/how-to-store-images-using-entity-framework-code-first-ctp-5
+
+Converting byte[] to Image and reverse:
+
+https://stackoverflow.com/questions/17352061/fastest-way-to-convert-image-to-byte-array

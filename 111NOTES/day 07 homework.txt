@@ -1,0 +1,73 @@
+DAY 07 HOMEWORK
+===============
+
+All Inputs task
+---------------
+
+Example resulting file content:
+
+Jerry;18-35;dog,cat;America;28
+Maria;36andup;;Europe;20
+
+
+TASK 6 - Hot Dog Configurator
+-----------------------------
+
+Create project Day07Hotdogs. Your user interface is as follows
+
+Customer name: [ _______________ ]
+Date of birth: [ _______________ ]
+Bun type: (*) regular ( ) whole grain ( )italian
+Sausage type: (*) German ( )with cheese ( ) vegetarian
+Temperature 40-90 C  [--------------*------------]
+Toppings: [x] Ketchup [x] Mustard [ ]Relish
+              [[ Place order ]]
+
+
+When user presses "Place order" button you must first verify name and date of birth.
+If verification fails then display a dialog informing the user.
+If verification succeeds then collect the data and write it to "hotdogs.txt" file in the following format, one line per hot-dog.
+
+Jerry;1980-03-27;whole grain;vegetarian;Ketchup,Mustard
+
+
+Validation:
+- name between 2 and 20 characters long
+- date of birth in YYYY-MM-DD format, you must parse the date and then verify that the person's age today is between 0 and 150 years
+
+
+TUTORIAL READING
+-----------------
+
+From https://wpf-tutorial.com/ tutorial read the following sections and sub-sections:
+
+* Panels
+- Introduction to WPF panels
+- The Canvas control
+- The WrapPanel control
+- The StackPanel control
+- The DockPanel control
+
+* List controls
+- The ItemsControl
+- The ListBox control
+- The ComboBox control
+
+* The ListView control
+- Introduction to the ListView control
+- A simple ListView example
+- ListView, data binding and ItemTemplate
+- ListView with a GridView
+
+Also make sure you've read ALL SECTIONS mentioned in previous day's homework, in particular:
+
+* Dialogs
+- The MessageBox
+- The OpenFileDialog
+- The SaveFileDialog
+
+* Common interface controls
+- The WPF Menu control
+- The WPF ContextMenu
+- The WPF StatusBar control
+

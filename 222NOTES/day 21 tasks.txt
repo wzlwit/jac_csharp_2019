@@ -1,0 +1,20 @@
+TASK - Indexers
+
+Create project Day21FibIndexer
+
+In it create class FibStore with one-dimensional indexer that takes integer as a parameter and returns long.
+
+There is no setter for the indexer.
+
+The getter will return the Nth fibonacci number, hence:
+
+FibStore fs = new FibStore();
+Console.WriteLine(fs[1]); // writes: 1
+Console.WriteLine(fs[2]); // writes: 1
+Console.WriteLine(fs[3]); // writes: 2
+Console.WriteLine(fs[4]); // writes: 3
+Console.WriteLine(fs[5]); // writes: 5
+...
+Console.WriteLine(fs[-4]); // throws IllegalArgumentException or similar
+
+ 

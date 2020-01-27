@@ -1,0 +1,15 @@
+DAY 02 UPCOMING QUIZ TOPICS
+
+* if/else, switch/case for/while/do-while/foreach loops
+* methods - passing parameters, return values,
+* Parse, TryParse with output parameter
+* Handling parsing exception, try-catch-finally
+* Console I/O, random numbers generation
+* arrays single dimension, multiple dimension
+* searching for min/max, mathematical formulas as algorithms
+* string operations, formatted output
+
+Not included:
+* custom classes, file I/O, inheritance, etc.
+
+

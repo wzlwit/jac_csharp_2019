@@ -1,0 +1,22 @@
+Main Items in this course:
+* ListView with bindings to List<Something> fields of Something
+* File Open/Save dialogs
+* Menu
+* Status bar
+* DockPanel layout
+* MS SQL database connection using SQL directly
+* Custom WPF Dialogs (additional windows)
+* Possibly: LINQ, var vs object types, enums (in SQL database and Entities)
+
+
+* NuGet, Blob
+* Indexer []
+* MS SQL database connection using EntityFramework
+* Explanation of delegates/events (used in event handling by WPF)
+* Explanation of access modifiers in DotNet
+* Possibly: review of interfaces, abstract classes, inheritance, static
+* Possibly: factory and singleton programming patterns
+* Other items by request (e.g. accessing URLs for API use)
+* Project: Trello, Git, Daily Scrum - best practices of Agile software development
+- more on the projects after quiz 1
+

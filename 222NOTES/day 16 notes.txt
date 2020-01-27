@@ -1,0 +1,23 @@
+DAY 16 NOTES
+
+CREATE TABLE [dbo].[Todos]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Task] NVARCHAR(100) NOT NULL, 
+    [DueDate] DATE NOT NULL, 
+    [IsDone] NVARCHAR(10) NOT NULL, 
+    CONSTRAINT [CK_Todos_Column] CHECK (IsDone IN ('pending','done'))
+)
+
+Tutorial to read about Enumerations in C#
+https://www.tutorialsteacher.com/csharp/csharp-enum
+
+DisplayMemberBinding="{Binding Path=startDate, StringFormat='yyyy-MM-dd HH:mm:ss.fff'}"
+
+SELECT * FROM Todos ORDER BY Id
+SELECT * FROM Todos ORDER BY @Id
+SELECT * FROM Todos ORDER BY 'Id'
+
+Single Responsibility Principle
+
+

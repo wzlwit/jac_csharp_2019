@@ -1,0 +1,44 @@
+DAY 07 REGULAR EXPRESSIONS CLIFF NOTES
+
+^ - start of line/text anchor
+$ - end of line/text anchor
+
+[a-z0-9_-] [a-z] - ranges
+[^a-z] - negated range, anything that's not a lowercase letter
+[h-z]
+[2-7]
+^[a-z][0-9]+$
+^[a-z0-9]+$
+^[!@#$%^&*()][0-9]+$
+
+[0-9] or \d  or :digit: - same range: digits only
+
+. -> any character
+\. -> a dot  (sometimes "\\.")
+
+repeats always apply to preceeding item:
++ -> one or more, equivalent to {1,}
+* -> zero, one or more, equivalent to {0,}
+? -> optional (one or zero), equivalent to {0,1}
+{n,m} -> repeat n times to m times, e.g {2,20}
+{n} -> repeat exactly n times
+
+https://code.tutsplus.com/tutorials/8-regular-expressions-you-should-know--net-6149
+
+
+Example for email (improved):
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z]{2,})$
+
+Example for integer value (signed):
+^-?[1-9][0-9]*$   <= does not match 0 which is a problem
+
+^(-?[1-9][0-9]*|0)$
+
+Example for IP address (structure only, NOT values):
+^[1-9][0-9]*(\.[1-9][0-9]*){3}$
+
+^[1-9][0-9]{0,2}(\.[1-9][0-9]{0,2}){3}$
+
+
+
+

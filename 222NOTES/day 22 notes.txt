@@ -1,0 +1,9 @@
+When deleting a record that has dependent records there are 4 options:
+
+1. Do nothing. Do nothing to dependent records -> they will continue referring to OwnerId that no longer exists (foreign key is now broken)
+
+2. Set to null. In database design allow OwnerId to NULL. When owner record is deleted set OwnerId of each dependent record to NULL.
+
+3. Cascade. Delete all dependent record when deleting owner record.
+
+4. Restrict. As long as dependent records exist you are not allowed to delete the owner record.

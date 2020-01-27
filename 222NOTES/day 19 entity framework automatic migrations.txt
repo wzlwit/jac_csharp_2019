@@ -1,0 +1,18 @@
+To use automatic database migration - steps:
+
+1. Go to Tools -> NuGet Package Manager -> Package Manager Console.
+
+2. Type this command in the console and press Enter
+
+enable-migrations -EnableAutomaticMigrations:$true
+
+Note: You only need to do this ONCE for the solution/project.
+
+3. Modify your entity (add/remove fields, etc.)
+
+4. Run your project once - it will fail.
+
+5. Go to Package Manager Console again, type this command and press Enter:
+
+update-database
+

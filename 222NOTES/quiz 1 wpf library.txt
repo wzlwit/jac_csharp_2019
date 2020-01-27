@@ -1,0 +1,53 @@
+Quiz 1 - DotNet Advanced Course
+===============================
+
+Create project Quiz1Library.
+
+public class Book {
+	public Book() {}
+	public Book(string dataLine) { ... } // throws DataInvalidException
+	public string Author, Title; // 1-100 characters, no semicolons
+	public string Genre; // drop-box: Romance, Self-Help, Other
+	public double Price; // 0-10000, display with 2 decimal places
+	public DateTime PubDate; // publication date - DatePicker
+	public override string ToString() { ... }
+	public string ToDataString() {...}
+}
+
+public class DataInvalidException : Exception {
+	public DataInvalidException(String msg) : base(msg) {}
+	public DataInvalidException(String msg, Exception ex) : base(msg, ex) {}
+}
+
+public class Program should contain:
+
+List<Book> bookList = new List<Book>();
+
+void SaveDataToFile(string filePath, List<Book> dataList) { ... }
+void LoadDataFromFile(string filePath)
+
+When program starts it should load data from "library.dat" file.
+When program is about to exit it should save all data back to "library.dat" file.
+
+All data must be validated when:
+* reading a line from file (including domain validation of all fields)
+* add / update from GUI using buttons
+
+Your main goal will be to implement CRUD functionality.
+
+Create - Add button.
+Retrieve - ListView content is populated
+Update & Delete - When item ListView is clicked load exiting item into right-hand side (enable Update & Delete buttons and handle them)
+
+Deletion must require a confirmation with OK/Cancel dialog box that displays the ToString() result on item about to be deleted.
+
+Search must be implemented using LINQ.
+Search will make ListView display only records where either author or title contain string entered by the user.
+
+Status bar should describe the last operation executed (loading or saving data to file, modification of data, etc.)
+
+You must apply all best practices you've learned about so far, including but not limited to: naming conventions, task decomposition, error handling, GUI optimal design.
+
+SUBMISSION:
+Close Visual Studio. Create a ZIP file (not 7ZIP, not RAR) of the entire Solution and upload it to LEA.
+

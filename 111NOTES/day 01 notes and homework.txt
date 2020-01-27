@@ -1,0 +1,110 @@
+CLASS 01 NOTES & HOMEWORK
+=========================
+
+https://www.tutorialspoint.com/csharp/
+
+read the following sections:
+
+C# - Home
+C# - Overview
+C# - Environment
+C# - Program Structure
+C# - Basic Syntax
+C# - Data Types
+C# - Type Conversion
+C# - Variables
+C# - Constants
+C# - Operators
+C# - Decision Making
+C# - Loops
+C# - Encapsulation
+C# - Methods
+C# - Nullables
+C# - Arrays
+C# - Strings
+C# - Structure
+C# - Enums
+C# - Classes
+
+
+TASK 1
+======
+
+Part 1 - basics and user input / output
+---------------------------------------
+
+Create new project Day01Review. Make sure project is placed in Git's Working Copy folder.
+
+Ask user for 3 integer numbers: minimum, maximum, count.
+
+Generate and print out 'count' random numbers between minimum and maximum (both inclusive).
+When printed out numbers must be separated by a comma and space.
+
+Example session:
+
+Enter minimum: 3
+Enter maximum: 10
+Enter how many numbers to generate: 4
+
+Numbers generated: 7, 5, 3, 9
+
+Press any key to exit
+
+Part 2 - error handling
+-----------------------
+
+Make sure your program does not crash if user enters an invalid number that is not an integer. Display an error message "Error: Value entered must be an integer" and end program.
+
+Make sure minimum is not larger than maximum. If it is display message "Error: minimum can not be larger than maximum" and end program.
+
+Make sure count is an integer (like above) and is 1 or greater. If it is not display message "Error: you must generate 1 or more numbers" and end program.
+
+Part 3 - more user friendly
+---------------------------
+
+If user enters a value that is not a valid integer display error message and keep asking user to enter a valid integer until successful.
+
+
+TASK 2 - HOMEWORK
+=================
+
+Using Visual Studio create a "C# Console" project. Name the project Day01Hello
+In its Main method program the following behaviour. 
+
+Ask user for their name (String).
+
+Ask user for their age (Integer).
+
+Then display a greeting using that information.
+
+Additionally, if user age is below 18 display "You are not an adult yet".
+
+Example session
+
+Enter your name: Jerry
+Enter your age: 13
+Hi Jerry, you are 13 y/o.
+You are not an adult yet.
+
+Later: add error handling for when age entered is not a valid integer, or is negative.
+
+
+TASK 3 - HOMEWORK
+=================
+
+Create console project Day01Find.
+
+Ask user to enter 5 floating point values.
+Save those 5 values in an array (List is also acceptable).
+
+NOT using any library tools (for sorting or searching for min/max, etc.) but only loops and ifs find out and print:
+- the smallest of the numbers
+- the sum of all the numbers
+- the average of all the those values
+- standard deviation of those values (read the Wikipedia article to find out how)
+
+Decompose your program into separate 5 methods, each to accomplish one of the tasks above.
+Method names are as follows (parameters and return values are up to you):
+EnterValues(), FindSmallestNumber(), FindSumOfAllNumbers(), FindAverage(), FindStandardDeviation().
+
+Note: if user enters a value that is not a valid floating point number display an error message and exit.

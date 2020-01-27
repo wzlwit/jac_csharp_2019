@@ -1,0 +1,56 @@
+DAY 15
+
+TASK 1
+
+Implement Delete in Day14PeopleDB project.
+
+Find out how to handle right-click context menu in ListView.
+
+Make sure you know which item in ListView was clicked.
+
+Allow user to right-click on an item in ListView.
+Show context menu with two options: Edit and Delete.
+
+Attach handler to Delete.
+
+When clicked display standard Ok/Cancel type of dialog asking for confirmation of Deletion. Make sure you display details of of the item to be deleted. You may choose to implement Person.ToString() while you're at it.
+
+When Ok is pressed delete the record in database and reload list from database.
+
+
+TASK 2  - Sorting by Column in Day14PeopleDB
+
+Resources to read:
+* https://stackoverflow.com/questions/30787068/wpf-listview-sorting-on-column-click?rq=1
+* https://docs.microsoft.com/en-us/dotnet/framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked
+
+Implement sorting by Id, Name, or Age when GridView column is clicked. You only need to sort in Ascending order. You may use LINQ to accomplish it or add sorting order parameter to Database.GetAllPeople() method.
+
+
+HOMEWORK 1
+
+Look for ALL TODO or FIXME markers in your and teacher's code and complete / fix the code.
+
+
+HOMEWORK 2 - Implement CRUD again (preparation for Quiz 2)
+
+Recall Todo application we worked on a while ago.
+
+Create a new project Day15TodoDB.
+Create a new Database (LocalDB - SQL File Database) named TodoApp with one table called 'Todos' with the following structure.
+
+Todos
+- Id INT PRIMARY KEY IDENTITY(1,1) NOT NULL
+- Task NVCHAR(100) NOT NULL
+- DueDate DATE NOT NULL
+- IsDone TINYINT NOT NULL (0 means pending, 1 or any other value means done)
+
+public class Todo {
+	public int Id { get; set; }
+	public string Task { get; set; }
+	public DateTime DueDate { get; set; }
+	public bool IsDone { get; set; }
+}
+
+Create AddEditDialog Window, Globals class, and Todo (NOT Todos) class just like we did in Day14PeopleDB project. Implement the same CRUD functionality, including context menu edit/delete, sorting by column click, etc.
+

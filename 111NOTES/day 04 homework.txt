@@ -1,0 +1,173 @@
+HOMEWORK
+
+Create project Day04PeopleListInFile
+
+Define class Person with the following fields and requirements expressed in getters/setters:
+- Name 2-100 characters long
+- Age 0-150
+- City 2-100 characters long
+
+Data will be stored in the main class in static field:
+
+static List<Person> people = new List<Person>();
+
+Define the following additional static methods in the Program class.
+static void AddPersonInfo()
+static void ListAllPersonsInfo()
+static void FindPersonByName()
+static void FindPersonYoungerThan()
+
+At the start of the program you will read in all data from text file and load into 'people' list using the following method:
+
+static void ReadAllPeopleFromFile()
+
+Just before program exits you will save data from 'people' list back to the file using the following method:
+
+static void SaveAllPeopleToFile()
+
+You are welcome to create additional helper methods as you see fit.
+
+When program starts it will read in data from the file, if file exists.
+
+You will then display a menu to the user:
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+
+The main purpose of the program is to implement functions to manage contents of file
+@"..\..\people.txt".
+
+Example session
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find and list a person by name
+4. Find and list persons younger than age
+0. Exit
+Choice: 1
+
+Adding a person.
+Enter name: Jerry
+Enter age: 22
+Enter city: Montreal
+Person added.
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 1
+
+Adding a person.
+Enter name: Maria
+Enter age: 26
+Enter city: Toronto
+Person added.
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 2
+
+Listing all persons
+Jerry is 22 from Montreal
+Maria is 26 from Toronto
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 3
+
+Enter partial person name:
+ri
+Matches found:
+Maria is 26 from Toronto
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 4
+
+Enter maximum age:
+25
+Matches found:
+Jerry is 22 from Montreal
+
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 55
+Invalid choice try again.
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: four
+Invalid choice try again.
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 0
+
+Good bye!
+
+
+
+Resulting data file will have the following structure.
+Jerry;22;Montreal
+Maria;26;Toronto
+
+
+NOTE: If you run your program again you will operate
+on data you already have, example:
+
+What do you want to do?
+1. Add person info
+2. List persons info
+3. Find a person by name
+4. Find all persons younger than age
+0. Exit
+Choice: 2
+
+Listing all persons
+Jerry is 22 from Montreal
+Maria is 26 from Toronto
+
+NOTE: you are only reading the file once when program starts and saving to it once when program exits.
+
+Exceptions you MUST handle:
+
+Any IOException, and parsing exception, data domain validation (setters) exception.
+
+You are NOT allowed to use LINQ.
+
+ADVANCED:
+Make sure your program can properly handle all kinds of invalid inputs when reading the input file. It should display a message and invalid line, skip it and continue parsing data in the next line.
+ 
+
+

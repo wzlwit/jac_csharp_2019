@@ -1,0 +1,29 @@
+class 05 notes
+
+https://www.akadia.com/services/dotnet_polymorphism.html
+
+
+
+Person p = new Person();
+Console.WriteLine(p.ToString());
+Object o = p;
+Student s = new Student();
+Teacher t = new Teacher();
+
+p.Print(); // works
+o.Print(); // not allowed (rule #1)
+s.Print(); // works
+Person pReallyS = s;
+pReallyS.Print(); // works Student::Print() is called
+Object o2 = s;
+o2.Print(); // not allowed (rule #1)
+
+t.Print(); // works Person::Print() is called 
+
+
+
+// 1. Your ability to call a method depends on the type of reference
+
+// 2. In a virtual method, the actual method called depends on the actual type pointed to by a reference
+
+

@@ -1,0 +1,43 @@
+DAY 06 HOMEWORK
+
+Read the following sections from https://wpf-tutorial.com/
+
+
+About WPF
+* What is WPF?
+* WPF vs. WinForms
+
+Getting started
+* Visual Studio Community
+* Hello, WPF!
+
+XAML
+* What is XAML?
+* Basic XAML
+* Events in XAML
+
+A WPF application
+* A WPF Application - Introduction
+* The Window
+* Working with App.xaml
+* Command-line parameters in WPF
+* Resources
+* Handling exceptions in WPF
+
+Basic controls
+* The TextBlock control
+* The TextBlock control - Inline formatting
+* The Label control
+* The TextBox control
+* The Button control
+* The CheckBox control
+* The RadioButton control
+* The PasswordBox control
+
+Dialogs
+* The MessageBox
+* The OpenFileDialog
+* The SaveFileDialog
+
+Common interface controls
+* The WPF Menu control

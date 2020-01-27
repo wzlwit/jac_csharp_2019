@@ -1,0 +1,52 @@
+Loop equivalence
+================
+
+for (;;) { }
+while (true) { }
+
+for (;Console.ReadLine() != "";  ) {
+...
+}
+
+while (Console.ReadLine() != "") { }
+
+
+for (INIT; COND; STEP) { BODY }
+
+INIT
+while (COND) {
+	BODY
+	STEP
+}
+
+INIT
+do {
+	BODY
+	STEP
+} while (COND)
+
+INIT
+if (COND) {
+	do {
+		BODY
+		STEP
+	} while (COND)
+}
+
+
+
+INIT
+if (COND) {
+	BODY
+	STEP
+	if (COND) {
+		BODY
+		STEP
+		if (COND)
+			...
+	}
+}
+
+
+
+

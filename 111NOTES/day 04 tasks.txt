@@ -1,0 +1,9 @@
+TASK Day04PeopleFromFile
+========================
+
+1. Read data.txt file in as separate lines.
+Parse it and instantiate Person objects with name & age specified in each line.
+As you're reading and parsing add each object to 'people' list.
+
+2. Using foreach loop print out each person's information on a separate line.
+You must use ToString() method defined for Person class to accomplish that.

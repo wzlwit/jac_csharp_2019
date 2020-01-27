@@ -1,0 +1,13 @@
+DAY 10 CLASS
+
+TASK 1
+
+Read tutorial regarding ListView
+https://wpf-tutorial.com/listview-control/introduction/
+https://wpf-tutorial.com/listview-control/simple-listview/
+https://wpf-tutorial.com/listview-control/listview-data-binding-item-template/
+https://wpf-tutorial.com/listview-control/listview-with-gridview/
+https://wpf-tutorial.com/listview-control/listview-gridview-left-aligned-column-names/
+
+
+
